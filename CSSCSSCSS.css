@@ -38,16 +38,30 @@ body {
  
   .flipping {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     margin-bottom: 100px;
   }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    margin-bottom: 20px; 
+  }
+  
   .scene, .scene2, .scene3 {
     width: 200px;
     height: 200px;
     perspective: 1200px;
+    margin-right: 12px; 
+  }
+  
+  .scene:last-child, .scene2:last-child, .scene3:last-child {
+    margin-right: 0;
   }
   
   .card, .card2, .card3 {
