@@ -92,6 +92,7 @@ body {
     background-size: 40px;
     background-position: bottom right;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
   }
 
   .card__face--back, .card__face--back2, .card__face--back3 {
@@ -99,11 +100,29 @@ body {
     color: brown;
     transform: rotateY( 180deg );
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 20px;
   }
   
   .card.is-flipped, .card2.is-flipped, .card3.is-flipped {
     transform: rotateY(180deg);
   }
+  #programmingcard {
+    text-align: inherit;
+    margin-left: 10px;
+  }
+  .paracard {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+.cardlink {
+    margin-top: auto; 
+  }
+
 .introcontainer {
     width: 100%;
     display: flex;
