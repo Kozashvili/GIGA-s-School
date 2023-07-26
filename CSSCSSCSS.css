@@ -84,7 +84,9 @@ body {
     color: #fff;
   }
   
-  .card__face--front, .card__face--front2, .card__face--front3 {
+  .card__face--front,
+ .card__face--front2,
+ .card__face--front3  {
     background: rgb(231 209 159 / 23%);
     color: brown;
     background-image: url(./Images/Air_conditioning_glyph_icon-removebg-preview.png);
@@ -186,3 +188,56 @@ body {
     transform: translateZ(-100px) scale(1.2);
     transition: transform 0.3s ease;
 }
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark-mode .card__face--front,
+  .dark-mode .card__face--front2,
+  .dark-mode .card__face--front3, 
+  .dark-mode .card__face--back,
+  .dark-mode .card__face--back2, 
+  .dark-mode .card__face--back3,
+  .dark-mode .divLogo,
+  .dark-mode .introcontainer, 
+  .dark-mode .sideimg, 
+  .dark-mode .sideimg2,
+  .dark-mode .card,
+  .dark-mode .card2,
+  .dark-mode .card3 {
+    background: none;
+    background-image: linear-gradient(#3B719F, #CCCCFF);;
+    color: white;
+    box-shadow: 5px 5px 10px rgb(83 83 83 / 76%)
+  } 
+  .dark-mode .companyTitle,
+  .dark-mode .introduction {
+    color: white;
+  }
+  .switchbuttons {
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 101px;
+    
+  }
+  .swtichimg {
+    width: 40px;
+  }
+  #lightModeButton {
+    display: none;
+  }
+  .dark-mode #darkModeButton{
+    display: none;
+  }
+  .dark-mode #lightModeButton{
+    display: block;
+  }
+  #lightmodeimg {
+    width: 50px;
+  }

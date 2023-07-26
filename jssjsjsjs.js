@@ -25,3 +25,19 @@ function displayNextLetter() {
 
 const letterInterval = setInterval(displayNextLetter, 50); // Adjust the delay between letters here (in milliseconds)
 
+function applyDarkMode() {
+    // Add the dark-mode class to the body or any other parent element
+    document.body.classList.add('dark-mode');
+  }
+  
+  function applyLightMode() {
+    // Remove the dark-mode class from the body or any other parent element
+    document.body.classList.remove('dark-mode');
+  }
+  
+  // Example usage when switching modes
+  const darkModeButton = document.getElementById('darkModeButton');
+  const lightModeButton = document.getElementById('lightModeButton');
+  
+  darkModeButton.addEventListener('click', applyDarkMode);
+  lightModeButton.addEventListener('click', applyLightMode);
