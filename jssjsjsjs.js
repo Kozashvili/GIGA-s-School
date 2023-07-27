@@ -57,4 +57,20 @@ function applyDarkMode() {
       lightModeImg.style.visibility = "visible"; // Make the element visible
     }, 3000); // 3 seconds delay (3000 milliseconds)
   });
+   
+
+  // scroll up button 
+  window.onscroll = function() {
+    const scrollUpBtn = document.getElementById("scrollUpBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      scrollUpBtn.style.display = "block";
+    } else {
+      scrollUpBtn.style.display = "none";
+    }
+  };
   
+  // Function to scroll back to the top
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+  }
