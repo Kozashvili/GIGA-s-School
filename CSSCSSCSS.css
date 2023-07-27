@@ -1,6 +1,6 @@
 
 body {
-    background-color: #bdbd7040;
+    background-color: #F6F6F6 ;
     margin: 0;
 }
 .divLogo {
@@ -11,7 +11,7 @@ body {
     justify-content: space-around;
     width: 100%;
     height: 80px;
-    background-color: rgb(231 209 159 / 23%);
+    background-color: #445566;
     align-items: center;
     margin-bottom: 60px;
     border-radius: 5px;
@@ -19,7 +19,7 @@ body {
   }
   .companyTitle {
     font-size: initial;
-    color: brown;
+    color: FFFFFF;
   }
   .imgLogo {
       max-height: 60px;
@@ -70,6 +70,8 @@ body {
     position: relative;
     transition: transform 1.5s;
     transform-style: preserve-3d;
+    background-image: linear-gradient(#FFFFFF , #F2F2F2 );
+    padding-bottom: 20px;
     
   }
   
@@ -87,8 +89,8 @@ body {
   .card__face--front,
  .card__face--front2,
  .card__face--front3  {
-    background: rgb(231 209 159 / 23%);
-    color: brown;
+    
+    color: #444444;
     background-image: url(./Images/Air_conditioning_glyph_icon-removebg-preview.png);
     background-repeat: no-repeat;
     background-size: 40px;
@@ -98,8 +100,7 @@ body {
   }
 
   .card__face--back, .card__face--back2, .card__face--back3 {
-    background: rgb(231 209 159 / 23%);
-    color: brown;
+    color: #333333;
     transform: rotateY( 180deg );
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -130,7 +131,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(231 209 159 / 23%);
+    background-color:#EAEAEA;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -139,7 +140,7 @@ body {
    
 }
 .introduction {
-    color: brown;
+    color: #333333;
     z-index: 2;
     width: 92%;
     text-align: center;
@@ -150,7 +151,7 @@ body {
     left: -10%;
     width: 120%;
     height: 120%;
-    background-color: rgb(231 209 159 / 23%);
+    background-color: #EAEAEA;
     border-radius: 50%;
 }
 .introsection {
@@ -163,7 +164,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 92px;
+    margin-bottom: 60px;
     overflow: hidden;
     margin-top: 120px;
     height: 80%;
@@ -173,7 +174,7 @@ body {
     position: relative;
     left: 40%;
     border-radius: 50%;
-    background-color: rgb(231 209 159 / 23%);
+    background-color: #EAEAEA;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transform: translateZ(-100px) scale(1.2);
     transition: transform 0.3s ease;
@@ -183,13 +184,13 @@ body {
     position: relative;
     right: 32%;
     border-radius: 50%;
-    background-color: rgb(231 209 159 / 23%);
+    background-color:#EAEAEA;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transform: translateZ(-100px) scale(1.2);
     transition: transform 0.3s ease;
 }
 .dark-mode {
-    background-color: black;
+    background-color: #222222 ;
     color: white;
   }
   
@@ -199,21 +200,27 @@ body {
   .dark-mode .card__face--back,
   .dark-mode .card__face--back2, 
   .dark-mode .card__face--back3,
-  .dark-mode .divLogo,
-  .dark-mode .introcontainer, 
-  .dark-mode .sideimg, 
-  .dark-mode .sideimg2,
   .dark-mode .card,
   .dark-mode .card2,
   .dark-mode .card3 {
     background: none;
-    background-image: linear-gradient(#3B719F, #CCCCFF);;
+    background-image: linear-gradient(to bottom, #2D2D2D, #353535);
     color: white;
     box-shadow: 5px 5px 10px rgb(83 83 83 / 76%)
   } 
-  .dark-mode .companyTitle,
-  .dark-mode .introduction {
+  .dark-mode .divLogo {
+    background-color: #333333;
+  }
+  .dark-mode .introcontainer, 
+  .dark-mode .sideimg, 
+  .dark-mode .sideimg2{
+    background-color: #2C2C2C;
+  }
+  .dark-mode .companyTitle {
     color: white;
+  }
+  .dark-mode .introduction {
+    color:  #EAEAEA ;
   }
   .switchbuttons {
     background: none;
