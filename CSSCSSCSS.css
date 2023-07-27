@@ -70,7 +70,7 @@ body {
     position: relative;
     transition: transform 1.5s;
     transform-style: preserve-3d;
-    background-image: linear-gradient(#FFFFFF , #F2F2F2 );
+    background-image: linear-gradient(#FFFFFF ,  #EAEAEA );
     
   }
   
