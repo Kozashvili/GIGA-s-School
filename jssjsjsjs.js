@@ -25,6 +25,8 @@ function displayNextLetter() {
 
 const letterInterval = setInterval(displayNextLetter, 50); // Adjust the delay between letters here (in milliseconds)
 
+
+// dark mode light mode buttons 
 function applyDarkMode() {
     // Add the dark-mode class to the body or any other parent element
     document.body.classList.add('dark-mode');
@@ -41,3 +43,18 @@ function applyDarkMode() {
   
   darkModeButton.addEventListener('click', applyDarkMode);
   lightModeButton.addEventListener('click', applyLightMode);
+
+
+  // light mode to be faded in only once 
+  document.addEventListener("DOMContentLoaded", function () {
+    const lightModeImg = document.getElementById("lightmodeimg");
+    lightModeImg.classList.add("fadeIn-once");
+  
+    // Remove the fadeIn-once class and update visibility after the initial delay
+    setTimeout(function () {
+      lightModeImg.classList.remove("fadeIn-once");
+      lightModeImg.style.opacity = ""; // Reset the opacity
+      lightModeImg.style.visibility = "visible"; // Make the element visible
+    }, 3000); // 3 seconds delay (3000 milliseconds)
+  });
+  
