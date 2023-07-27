@@ -176,6 +176,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transform: translateZ(-100px) scale(1.2);
     transition: transform 0.3s ease;
+    padding-bottom: 36px;
 }
 
 .sideimg1 {
