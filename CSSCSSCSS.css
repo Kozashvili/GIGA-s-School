@@ -177,6 +177,20 @@ body {
     transform: translateZ(-100px) scale(1.2);
     transition: transform 0.3s ease;
 }
+
+.sideimg1 {
+  display: none;
+  width: 300px;
+  padding-bottom: 36px;
+  position: relative;
+  left: 40%;
+  border-radius: 50%;
+  background-color: #EAEAEA;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transform: translateZ(-100px) scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 .sideimg2 {
     width: 300px;
     position: relative;
@@ -210,7 +224,6 @@ body {
     background-color: #333333;
   }
   .dark-mode .introcontainer, 
-  .dark-mode .sideimg, 
   .dark-mode .sideimg2{
     background-color: #2C2C2C;
   }
@@ -252,7 +265,16 @@ body {
   .dark-mode #lightModeButton{
     display: block;
   }
-
+  .dark-mode #scrollUpBtn{
+     background-color:#445566;
+  }
+  .dark-mode .sideimg {
+    display: none;
+  } 
+  .dark-mode .sideimg1 {
+    display: block;
+    background-color: #2C2C2C;
+ }
   #lightmodeimg {
     width: 60px;
     opacity: 1; 
