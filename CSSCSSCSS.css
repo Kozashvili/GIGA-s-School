@@ -293,4 +293,6 @@ body {
   #scrollUpBtn:hover {
     background-color: #04c90c;
   }
-  
+  .scrollimg {
+    width: 20px;
+  }
