@@ -218,8 +218,6 @@ body {
   .dark-mode .card,
   .dark-mode .card2,
   .dark-mode .card3 {
-    background: none;
-    background-image: linear-gradient(to bottom, #2D2D2D, #353535);
     color: white;
     box-shadow: 5px 5px 10px rgb(83 83 83 / 76%)
   } 
