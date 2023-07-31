@@ -62,7 +62,7 @@ function applyDarkMode() {
   // scroll up button 
   window.onscroll = function() {
     const scrollUpBtn = document.getElementById("scrollUpBtn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
       scrollUpBtn.style.display = "block";
     } else {
       scrollUpBtn.style.display = "none";
