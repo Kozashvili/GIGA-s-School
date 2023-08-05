@@ -1,4 +1,15 @@
 
+@font-face {
+  font-family: Georgia;
+  src: url(./georgia/Georgia.ttf);
+}
+* {
+  font-family: 'Georgia';
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     background-color: #F6F6F6 ;
     margin: 0;
@@ -113,17 +124,27 @@ body {
   .card.is-flipped, .card2.is-flipped, .card3.is-flipped {
     transform: rotateY(180deg);
   }
-  #programmingcard {
-    text-align: inherit;
-    margin-left: 10px;
-  }
+ 
   .paracard {
     font-size: 16px;
     text-align: center;
+    color: white;
+    margin-top: 20px;
+    width: 95%;
+    box-shadow: 8px 9px 5px rgba(0, 0, 0, 0.3);
+    background: #00000042;
   }
   
 .cardlink {
-    margin-top: auto; 
+  color: white;
+  position: absolute;
+  bottom: 27px;
+  background: #434141d1;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+  text-align: center;
   }
 
 .introcontainer {
@@ -374,5 +395,203 @@ body {
     background-color: rgb(58 58 82 / 39%);
     border-radius: 50px;
   }
+  .Computerintro {
+    display: none;
+  }
  
-  
+  @media screen and (min-width: 1440px) {
+    .companyTitle {
+      font-size: revert;
+    }
+    @keyframes move-left-right {
+      0% {
+        transform: translateX(-800%);
+        opacity: 1; /* Element is fully visible at the beginning of the animation */
+      }
+      
+      100% {
+        transform: translateX(-500%);
+        opacity: 0; /* Element is completely transparent at the end of the animation */
+      }
+    }
+    #lightmodeimg {
+      width: 100px;
+      opacity: 1;
+      animation: none;
+    }
+    .switchbuttons0 {
+      right: 229px;
+      top: -12px;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 1; 
+      }
+      
+      100% {
+        opacity: 1; 
+      }
+    }
+    .introsection {
+      height: auto;
+    }
+    .switchbuttons {
+      right: 242px;
+      top: 1.2px;
+    }
+    .swtichimg {
+      width: 75px;
+    }
+    .flipping {
+      display: none;
+    }
+    .introcontainer {
+      display: none;
+    }
+    .mySlides {display: none}
+img {vertical-align: middle;}
+
+.introsection {
+  flex-direction: column;
+}
+/* Slideshow container */
+.Computerintro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative; /* Add this line to make positioning inside .Computerintro relative */
+}
+.introslideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Add this line to hide overflowing images */
+}
+
+/* Set image width and height to 100% and maintain aspect ratio */
+.introslideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -41px;
+  color: white;
+  font-weight: bold;
+  font-size: 52px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.slide-content h1,
+.slide-content p,
+.slide-content button {
+  margin: 0;
+}
+.slide-content {
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slideheaders {
+  font-size: xxx-large;
+  box-shadow:  8px 9px 5px rgba(0, 0, 0, 0.3);
+}
+.slidetexts {
+  font-size: 24px;
+  width: 70%;
+  text-align: initial;
+  box-shadow:  8px 9px 5px rgba(0, 0, 0, 0.3);
+  height: 180px;
+}
+
+.slidebuttons {
+  text-decoration: none;
+  position: absolute;
+  bottom: 156px;
+  right: 246px;
+  width: 177px;
+  height: 60px;
+  background: #ffffff17;
+  border: none;
+  box-shadow: 8px 9px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 18px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.next {
+  z-index: 2;
+}
+
+.flipping {
+  display: none;
+}
+.divLogo {
+  margin: 0px;
+}
+
+
+  }
+
