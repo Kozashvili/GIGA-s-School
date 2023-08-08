@@ -579,7 +579,7 @@ img {vertical-align: middle;}
 .slidebuttons:hover {
   background: #ec008c;
   transform: scale(1.1); /* Increase the size by 10% */
-}ansition: left 0.2s ease-out;
+}
 
 
 @keyframes fade {
