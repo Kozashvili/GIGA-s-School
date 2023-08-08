@@ -137,17 +137,3 @@ function scrollToTop() {
       }
     });
   }
-  //  იხილეთ მეტი button
-  var slideButton = document.querySelector('.slidebuttons');
-
-  slideButton.addEventListener('mouseenter', function() {
-    slideButton.style.backgroundColor = '#ff69b4'; /* Change to the desired color on hover */
-    slideButton.style.transform = 'scale(1.2)';
-  });
-  
-  slideButton.addEventListener('mouseleave', function() {
-    slideButton.style.backgroundColor = '#ffffff17'; /* Revert to the original background color */
-    slideButton.style.transform = 'scale(1)';
-  });
-  
-  
